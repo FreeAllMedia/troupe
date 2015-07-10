@@ -1,0 +1,28 @@
+{
+  "name": "troupe",
+  "version": "0.0.0",
+  "description": "An agile collection of tools and methodologies for writing highly stable library-agnostic software using components.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreeAllMedia/troupe.git"
+  },
+  "keywords": [
+    "components",
+    "troupe",
+    "stable",
+    "framework"
+  ],
+  "author": "FreeAllMedia, LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FreeAllMedia/troupe/issues"
+  },
+  "homepage": "https://github.com/FreeAllMedia/troupe#readme",
+  "dependencies": {
+    "eslint": "^0.24.0"
+  }
+}
