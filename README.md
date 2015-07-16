@@ -1,10 +1,45 @@
-# Troupe.js
+```
+ _______
+|__   __|
+   | |_ __ ___  _   _ _ __   ___
+   | | '__/ _ \| | | | '_ \ / _ \
+   | | | | (_) | |_| | |_) |  __/
+   |_|_|  \___/ \__,_| .__/ \___|
+                     | |
+                     |_|
+```
 
 <!--TOC-->
 
 ## Introduction
 
-Troupe is an agile framework that assists in writing applications that are isolated from the libraries that power them.
+The past 20 years have brought an astounding amount of change in market forces and tech platforms. New languages pop up every year, new frameworks emerge every month, and innovative libraries are released weekly.
+
+**Language Churn**
+
+Tech consultants are asked routinely to make a call about which technology platforms to stake the future of a business upon.
+
+
+
+When they are popular, they enjoy tremendous prosperity. When they lose popularity, they are mostly abandoned which makes them no longer ideal to build a business upon.
+
+
+
+ but as was the case with the crash of the Ruby language's popularity in the past 5 years;
+
+Javascript is extremely popular now, but it's also a fragmented ecosystem in the midst of upgrading a vast `ECMAScript 5` codebase to the finalized `ECMAScript 2015` syntax. Right the 2015 upgrade, it will be moving onto another upgrade as `ECMAScript 2016` is finalized.
+
+Not much is certain about the future of `ECMAScript` except that it will eventually give way to something else, as is the way things go in technology.
+
+**Framework Churn**
+
+Within each language fragment are the sub-fragments of frameworks and libraries. What may seem like an obvious tech investment, may turn out to be the wrong decision [in only a couple of short years](http://www.tiobe.com/index.php/content/paperinfo/tpci/Ruby.html).
+
+**Monolithic Upgrades**
+
+
+
+Troupe is an implementation of  agile methodology for writing applications that are isolated from the libraries that power them. It's named after entertainment troupes which typically consist of many individuals working together to accomplish something amazing.
 
 As opposed to monolithic framework architecture, Troupe keeps application and library logic isolated from each other to take advantage of powerful benefits such as the ability to:
 
@@ -12,13 +47,7 @@ As opposed to monolithic framework architecture, Troupe keeps application and li
 * Utilize libraries from any language seamlessly.
 * Take organizational ownership of library interfaces, without taking responsibility over their underlying functionality.
 
-## Methodology
-
-Troupe is mostly held together by a methodology that helps its users make informed decisions, as opposed to more rigid frameworks that make decisions for its users.
-
-For this reason, it's important to read through the following sections to understand why Troupe is designed as it is before jumping right in to development.
-
-### Isolating Applications from Libraries
+## Isolating Applications from Libraries
 
 Traditionally applications are written with direct calls to libraries, like in this simple example:
 
@@ -138,13 +167,13 @@ bike.addPassenger(person);
 street.addEntity(bike);
 ```
 
-### Interface Ownership
+## Interface Ownership
 
 Libraries can vary wildly in interface style. Some may use callback, while others use promises. Some may have a chained interface. Some may put arguments in a certain order, while others are in a different order.
 
-Traditionally, these interfaces are controlled by their respective library owners, and if we want a change them, we would need to convince the library owners to make the change.
+Traditionally, these interfaces are controlled by their respective library owners, and if we want a change them, we need to convince the library owners to make the change.
 
-By encapsulating libraries into components, organizations are given an opportunity to take ownership of library interfaces, without altering anything about the library itself.
+By encapsulating libraries into components, organizations are given an opportunity to take ownership of library interfaces, without altering the library itself.
 
 This is different from forking a library because you continue to receive patches and feature updates from library owners as usual, but now have the ability to change the library's interface at will to match your organization's preferred coding style.
 
@@ -197,7 +226,7 @@ class PersonComponent {
 }
 ```
 
-### Component Testing
+## Component Testing
 
 Sometimes, libraries are poorly tested, under tested, or not tested at all. Other times, libraries can show 100% passing test coverage, but have methodological errors in how they are tested.
 
@@ -257,13 +286,13 @@ describe("PersonComponent(attributes)", () => {
 });
 ```
 
-#### Continuous Integration
+## Continuous Integration
 
-#### Continuous Quality Auditing
+## Continuous Quality Auditing
 
-### Component Consumability
+## Component Consumability
 
-### Component Design Contract
+## Component Design Contract
 
 
 
